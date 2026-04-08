@@ -64,7 +64,7 @@ Objetivo
 
 👉 Pensar como engenheiro de dados desde o início.
 
-******************************************
+
 
 ✅ Fase 2 — Entendimento dos Dados (Data Understanding)
 
@@ -81,6 +81,9 @@ Ferramentas:
 Python
 Pandas
 Jupyter Notebook
+
+
+
 ✅ Fase 3 — Limpeza de Dados (Data Cleaning)
 
 Aqui começa o trabalho REAL.
@@ -106,6 +109,9 @@ load.py
 Fluxo:
 
 CSV → limpeza → dataset final
+
+******************************************
+
 ✅ Fase 5 — Banco de Dados (SQL)
 
 Criar banco:
