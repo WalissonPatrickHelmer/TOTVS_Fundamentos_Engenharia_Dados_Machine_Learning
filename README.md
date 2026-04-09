@@ -1,192 +1,100 @@
-# 🚀 Engenharia de Dados — Estacionamento Público Motofrete (Belo Horizonte)
+## 📊 Visualizações dos Dados
 
-Projeto completo de **Engenharia de Dados** utilizando dados públicos da Prefeitura de Belo Horizonte para análise de vagas destinadas ao **motofrete**.
+### 1️⃣ Ranking de Vagas Físicas
+![Ranking Vagas](dashboard/01_ranking_vagas_fisicas.png)
 
-O objetivo foi construir um pipeline real seguindo arquitetura moderna de dados:
+### 2️⃣ Comparação de Tipos de Vagas
+![Comparação](dashboard/02_comparacao_vagas.png)
 
-> **Raw → Processed → Gold → Analytics → Visualização**
+### 3️⃣ Total de Registros
+![Total](dashboard/03_total_registros.png)
 
----
+### 4️⃣ Distribuição Percentual
+![Distribuição](dashboard/04_distribuicao_percentual.png)
 
-## 📊 Visão Geral
+### 5️⃣ Ranking Horizontal
+![Ranking Horizontal](dashboard/05_ranking_horizontal.png)
 
-Este projeto realiza:
+### 6️⃣ Top 10 Bairros
+![Top Bairros](dashboard/top10_bairros.png)
 
-✅ Ingestão de múltiplos arquivos CSV mensais  
-✅ Tratamento e padronização dos dados  
-✅ Extração de coordenadas geográficas  
-✅ Criação de camada analítica (GOLD)  
-✅ Geração automática de gráficos  
-✅ Estrutura profissional de Data Pipeline
+✅ Isso já vai funcionar direto no GitHub.
 
----
+✅ Agora — explicação PROFISSIONAL de cada gráfico
 
-## 🏗️ Arquitetura do Projeto
+(essa parte é o que valoriza seu projeto no LinkedIn e recrutadores 👇)
 
+Você pode colocar exatamente assim no README:
 
-data/
-│
-├── raw/ → dados brutos
-├── processed/ → dados tratados (Silver)
-└── gold/ → dados analíticos finais
+📊 Análise Visual dos Dados
 
+Este projeto gera automaticamente gráficos analíticos a partir dos dados públicos de estacionamento, permitindo identificar padrões urbanos e oportunidades de análise para mobilidade e logística urbana.
 
-Pipeline inspirado em arquiteturas modernas:
+🥇 01 — Ranking de Vagas Físicas
 
-- Bronze (Raw)
-- Silver (Transformação)
-- Gold (Analytics)
+Objetivo:
+Apresentar quais categorias ou regiões possuem maior quantidade total de vagas físicas disponíveis.
 
----
+Insights possíveis:
 
-## ⚙️ Tecnologias Utilizadas
+Identificação de regiões com maior infraestrutura urbana
+Apoio a decisões logísticas
+Base para estudos de mobilidade urbana
+⚖️ 02 — Comparação de Vagas
 
-- Python
-- Pandas
-- Matplotlib
-- ETL Pipeline
-- Data Modeling
-- Análise Exploratória de Dados
+Objetivo:
+Comparar diferentes tipos de vagas existentes no dataset.
 
----
+O que demonstra:
 
-## 🔄 Pipeline de Dados
+Diferença entre vagas físicas e rotativas
+Distribuição operacional do estacionamento
+Eficiência do uso do espaço público
+📈 03 — Total de Registros
 
-### 1️⃣ Extract (`extract.py`)
-- Busca arquivos CSV mensais
-- Centraliza ingestão de dados
+Objetivo:
+Mostrar o volume total de registros analisados.
 
-### 2️⃣ Transform (`transform.py`)
-- Limpeza de encoding (UTF-8 / BOM)
-- Padronização de colunas
-- Conversão de tipos
-- Extração de coordenadas do campo `GEOMETRIA`
-- Geração da camada **Processed**
+Importância:
 
-### 3️⃣ Gold Layer (`gold.py`)
-Criação das métricas analíticas:
+Demonstra escala do dataset
+Valida robustez da análise
+Evidencia capacidade de processamento do pipeline ETL
+🧩 04 — Distribuição Percentual
 
-- Total de vagas físicas
-- Total de vagas rotativas
-- Quantidade de registros por bairro
+Objetivo:
+Visualizar a proporção entre categorias de dados.
 
-Resultado:
+Benefícios:
 
+Entendimento rápido da composição dos dados
+Identificação de dominância de categorias
+Base para análises comparativas futuras
+📊 05 — Ranking Horizontal
 
-data/gold/estacionamento_motofrete_analitico.csv
+Objetivo:
+Apresentar ranking em formato horizontal para melhor leitura comparativa.
 
+Por que usar:
 
----
+Melhor visualização quando existem muitos itens
+Facilita leitura em apresentações e dashboards
+Mais acessível visualmente
+🏙️ 06 — Top 10 Bairros com Mais Vagas
 
-## 📈 Visualizações Automáticas
+Objetivo:
+Identificar os bairros com maior concentração de vagas públicas.
 
-Os gráficos são gerados automaticamente com:
+Insights estratégicos:
 
-```bash
-python visualizacao.py
-📊 Resultados
-🥇 Ranking de vagas físicas
+Regiões com maior fluxo urbano
+Possíveis áreas ideais para motofrete/logística
+Apoio à análise de mobilidade urbana em Belo Horizonte
+✅ Dica MUITO importante (GitHub)
 
-⚖️ Comparação vagas físicas vs rotativas
+Depois de editar:
 
-📦 Total de registros por bairro
-
-🧭 Distribuição percentual
-
-📊 Ranking horizontal (visual executivo)
-
-🧠 Insights Obtidos
-Região central concentra maior volume de vagas de motofrete
-Forte presença em áreas comerciais estratégicas
-Distribuição desigual entre bairros
-Alta rotatividade em regiões de logística urbana
-⭐ Pontos Fortes do Projeto
-
-✅ Pipeline completo de Engenharia de Dados
-✅ Separação em camadas (Raw / Processed / Gold)
-✅ Automação total do fluxo
-✅ Tratamento de inconsistências reais de dados públicos
-✅ Conversão e padronização de encoding CSV
-✅ Estrutura semelhante a projetos corporativos
-✅ Geração automática de analytics
-
-📂 Estrutura do Repositório
-.
-├── data
-│   ├── raw
-│   ├── processed
-│   └── gold
-│
-├── src
-│   ├── extract.py
-│   ├── transform.py
-│   └── gold.py
-│
-├── notebooks
-│   └── análises exploratórias
-│
-├── dashboard
-│   └── gráficos gerados automaticamente
-│
-├── visualizacao.py
-├── requirements.txt
-└── README.md
-▶️ Como Executar
-1️⃣ Criar ambiente virtual
-python -m venv .venv
-2️⃣ Ativar
-
-Windows:
-
-.venv\Scripts\activate
-3️⃣ Instalar dependências
-pip install -r requirements.txt
-4️⃣ Executar pipeline
-python src/transform.py
-python src/gold.py
-python visualizacao.py
-🎯 Objetivo Profissional
-
-Este projeto demonstra habilidades em:
-
-Engenharia de Dados
-ETL
-Modelagem Analítica
-Automação em Python
-Storytelling com Dados
-👨‍💻 Autor
-
-Walisson Patrick Helmer
-
-📍 Belo Horizonte — MG
-🔗 LinkedIn: https://www.linkedin.com/in/walissonpatrickhelmer/
-
-💻 GitHub: https://github.com/WalissonPatrickHelmer
-
-🚀 Próximos Passos (Roadmap)
-Dashboard interativo (Streamlit)
-Integração com banco de dados
-Orquestração com Airflow
-API de consulta dos dados
-Deploy em Cloud
-
-⭐ Se este projeto foi útil, deixe uma estrela no repositório!
-
-
----
-
-# 🔥 Resultado
-
-Quando subir no GitHub:
-
-✅ imagens aparecem automaticamente  
-✅ README vira página visual  
-✅ parece projeto de engenheiro de dados pleno  
-
----
-
-Se quiser, no próximo passo eu te mostro algo que muda MUITO o impacto:
-
-👉 **como transformar esse projeto em um post viral no LinkedIn (estrutura pronta + storytelling)** — praticamente garantia de engajamento.
-
-Só dizer: **"vamos montar o post"** 🚀.
+CTRL + S
+git add .
+git commit -m "fix: imagens README"
+git push
