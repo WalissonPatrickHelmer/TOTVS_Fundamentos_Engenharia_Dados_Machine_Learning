@@ -110,7 +110,7 @@ Fluxo:
 
 CSV → limpeza → dataset final
 
-******************************************
+
 
 ✅ Fase 5 — Banco de Dados (SQL)
 
@@ -127,6 +127,8 @@ Você vai aprender:
 ✅ SQL real de backend
 ✅ joins reais
 
+******************************************
+
 ✅ Fase 6 — Análise de Dados
 
 Responder perguntas de negócio:
@@ -135,6 +137,8 @@ Onde há mais vagas?
 Quais regiões têm mais rotatividade?
 Horários críticos?
 Tipos de estacionamento mais comuns?
+
+
 ✅ Fase 7 — Dashboard (Power BI)
 
 Criar:

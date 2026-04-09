@@ -1,8 +1,8 @@
 import pandas as pd
 
 df = pd.read_csv(
-    "data/processed/20230801_estacionamento_publico_motofrete_tratado.csv"
+    "data/gold/estacionamento_motofrete_analitico.csv"
 )
 
-print(df.info())
 print(df.head())
+print(df.info())
