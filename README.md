@@ -18,13 +18,7 @@
 ### 6️⃣ Top 10 Bairros
 ![Top Bairros](dashboard/top10_bairros.png)
 
-✅ Isso já vai funcionar direto no GitHub.
 
-✅ Agora — explicação PROFISSIONAL de cada gráfico
-
-(essa parte é o que valoriza seu projeto no LinkedIn e recrutadores 👇)
-
-Você pode colocar exatamente assim no README:
 
 📊 Análise Visual dos Dados
 
