@@ -1,154 +1,100 @@
-# 🚀 Engenharia de Dados — Estacionamento Público Motofrete (Belo Horizonte)
+## 📊 Visualizações dos Dados
 
-Projeto completo de **Engenharia de Dados** utilizando dados públicos da Prefeitura de Belo Horizonte para análise de vagas destinadas ao **motofrete**.
+### 1️⃣ Ranking de Vagas Físicas
+![Ranking Vagas](dashboard/01_ranking_vagas_fisicas.png)
 
-> **Raw → Processed → Gold → Analytics → Visualização**
+### 2️⃣ Comparação de Tipos de Vagas
+![Comparação](dashboard/02_comparacao_vagas.png)
 
----
+### 3️⃣ Total de Registros
+![Total](dashboard/03_total_registros.png)
 
-## 📊 Visão Geral
+### 4️⃣ Distribuição Percentual
+![Distribuição](dashboard/04_distribuicao_percentual.png)
 
-Este projeto realiza:
+### 5️⃣ Ranking Horizontal
+![Ranking Horizontal](dashboard/05_ranking_horizontal.png)
 
-✅ Ingestão de múltiplos CSV mensais  
-✅ Tratamento e padronização dos dados  
-✅ Extração de coordenadas geográficas  
-✅ Criação da camada analítica (GOLD)  
-✅ Geração automática de gráficos  
+### 6️⃣ Top 10 Bairros
+![Top Bairros](dashboard/top10_bairros.png)
 
----
+✅ Isso já vai funcionar direto no GitHub.
 
-## 🏗️ Arquitetura do Projeto
+✅ Agora — explicação PROFISSIONAL de cada gráfico
 
+(essa parte é o que valoriza seu projeto no LinkedIn e recrutadores 👇)
 
-data/
-├── raw/ → dados brutos
-├── processed/ → dados tratados
-└── gold/ → dados analíticos
+Você pode colocar exatamente assim no README:
 
+📊 Análise Visual dos Dados
 
-Arquitetura baseada em:
+Este projeto gera automaticamente gráficos analíticos a partir dos dados públicos de estacionamento, permitindo identificar padrões urbanos e oportunidades de análise para mobilidade e logística urbana.
 
-- Bronze
-- Silver
-- Gold
+🥇 01 — Ranking de Vagas Físicas
 
----
+Objetivo:
+Apresentar quais categorias ou regiões possuem maior quantidade total de vagas físicas disponíveis.
 
-## ⚙️ Tecnologias Utilizadas
+Insights possíveis:
 
-- Python
-- Pandas
-- Matplotlib
-- ETL Pipeline
-- Data Analytics
+Identificação de regiões com maior infraestrutura urbana
+Apoio a decisões logísticas
+Base para estudos de mobilidade urbana
+⚖️ 02 — Comparação de Vagas
 
----
+Objetivo:
+Comparar diferentes tipos de vagas existentes no dataset.
 
-## 🔄 Pipeline de Dados
+O que demonstra:
 
-### Extract — `extract.py`
-Busca arquivos CSV mensais.
+Diferença entre vagas físicas e rotativas
+Distribuição operacional do estacionamento
+Eficiência do uso do espaço público
+📈 03 — Total de Registros
 
-### Transform — `transform.py`
-- Limpeza de encoding
-- Padronização
-- Conversão de tipos
-- Extração de coordenadas
+Objetivo:
+Mostrar o volume total de registros analisados.
 
-### Gold — `gold.py`
+Importância:
 
-Gera métricas analíticas:
+Demonstra escala do dataset
+Valida robustez da análise
+Evidencia capacidade de processamento do pipeline ETL
+🧩 04 — Distribuição Percentual
 
-- Total de vagas físicas
-- Total de vagas rotativas
-- Registros por bairro
+Objetivo:
+Visualizar a proporção entre categorias de dados.
 
-Output:
+Benefícios:
 
+Entendimento rápido da composição dos dados
+Identificação de dominância de categorias
+Base para análises comparativas futuras
+📊 05 — Ranking Horizontal
 
-data/gold/estacionamento_motofrete_analitico.csv
+Objetivo:
+Apresentar ranking em formato horizontal para melhor leitura comparativa.
 
+Por que usar:
 
----
+Melhor visualização quando existem muitos itens
+Facilita leitura em apresentações e dashboards
+Mais acessível visualmente
+🏙️ 06 — Top 10 Bairros com Mais Vagas
 
-## 📈 Visualizações
+Objetivo:
+Identificar os bairros com maior concentração de vagas públicas.
 
-Execute:
+Insights estratégicos:
 
-```bash
-python visualizacao.py
-🥇 Ranking de vagas físicas
+Regiões com maior fluxo urbano
+Possíveis áreas ideais para motofrete/logística
+Apoio à análise de mobilidade urbana em Belo Horizonte
+✅ Dica MUITO importante (GitHub)
 
-⚖️ Comparação vagas físicas vs rotativas
+Depois de editar:
 
-📦 Total de registros por bairro
-
-🧭 Distribuição percentual
-
-📊 Ranking horizontal
-
-🧠 Insights
-Região central concentra maior volume de vagas
-Forte presença em áreas comerciais
-Distribuição desigual entre bairros
-Alta rotatividade logística
-⭐ Pontos Fortes
-
-✅ Pipeline completo de Engenharia de Dados
-✅ Arquitetura Bronze → Silver → Gold
-✅ Automação total
-✅ Tratamento de dados reais
-✅ Visualização automática
-
-📂 Estrutura
-.
-├── data/
-├── dashboard/
-├── notebooks/
-├── src/
-├── visualizacao.py
-├── requirements.txt
-└── README.md
-▶️ Como Executar
-Criar ambiente
-python -m venv .venv
-Ativar (Windows)
-.venv\Scripts\activate
-Instalar dependências
-pip install -r requirements.txt
-Rodar pipeline
-python src/transform.py
-python src/gold.py
-python visualizacao.py
-👨‍💻 Autor
-
-Walisson Patrick Helmer
-
-📍 Belo Horizonte — MG
-
-🔗 LinkedIn
-https://www.linkedin.com/in/walissonpatrickhelmer/
-
-💻 GitHub
-https://github.com/WalissonPatrickHelmer
-
-🚀 Próximos Passos
-Dashboard interativo (Streamlit)
-Banco de dados
-Orquestração com Airflow
-Deploy em Cloud
-
-⭐ Se gostou do projeto, deixe uma estrela!
-
-
----
-
-# ✅ AGORA FAÇA ISSO (PASSO FINAL)
-
-Dentro do projeto:
-
-```bash
+CTRL + S
 git add .
-git commit -m "fix: adiciona imagens no README"
+git commit -m "fix: imagens README"
 git push
